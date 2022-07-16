@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+#cencel {
+    position: absolute;
+}
+
+label #btn {
+    font-size: 30px;
+    top: 50px;
+    left: 30px;
+    color: rgb(175, 44, 44);
+    cursor: pointer;
+    transition: .5s;
+}
+
+label #cencel {
+    font-size: 40px;
+    left: -250px;
+    top: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+label #cencel:hover {
+    transform: rotate(180deg);
+}
+
+label #btn:hover {
+    transform: rotate(180deg);
+}
+
+#check:checked~.sidebar_overall {
+    left: 250px;
+}
+
+#check:checked~label #btn {
+    left: -300px;
+}
+
+#check:checked~label #cencel {
+    left: 250px;
+
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid aqua;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: cadetblue;
+}
+
+.sidebar_overall {
+    padding: 20px;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(70, 30, 30);
+    font-size: 20px;
+    margin-left: -250px;
+    transition: .5s;
+}
+
+
+
+li,
+a {
+    padding-top: 10px;
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+    color: aliceblue;
+    transition: .5s;
+
+}
+
+li {
+    border-bottom: 1px solid aqua;
+    border-radius: 10px;
+    margin-left: -10px;
+    margin-right: 20px;
+
+}
+
+li:hover a {
+    padding: 30px;
+    font-size: 25px;
+
+}
