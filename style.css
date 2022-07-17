@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgba(28, 84, 121, 0.514);
+}
+
+section.one {
+    margin-top: -30px;
 }
 
 #check {
@@ -71,10 +76,11 @@ header:hover {
     position: fixed;
     width: 200px;
     height: 100%;
-    background-color: rgba(80, 79, 26, 0.623);
+    background-color: rgb(40, 44, 41);
     font-size: 20px;
     margin-left: -250px;
     transition: .5s;
+    margin-top: -100px;
 }
 
 
@@ -105,4 +111,114 @@ li:hover a {
     color: orange;
     border-radius: 20px;
 
+}
+
+
+/* akane cover part class two */
+.two {
+
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 10px rgb(145, 245, 252);
+    margin-top: 120px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-image: linear-gradient(rgb(182, 162, 162), rgba(255, 0, 0, 0.678));
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile {
+    padding: 20px;
+    padding-top: 30px;
+
+}
+
+
+
+.profile h1 {
+
+    color: rgb(13, 219, 255);
+    font-size: 40px;
+    transition: .5s;
+
+}
+
+.profile h1:hover {
+    color: rgb(0, 153, 255);
+    transform: scale(1.1);
+}
+
+.profile h2 {
+    color: rgb(0, 255, 170);
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-top: -15px;
+
+}
+
+.profile h3 {
+    margin-top: 20px;
+    color: rgb(255, 0, 149);
+    font-size: 26px;
+
+}
+
+.profile a {
+    font-size: 26px;
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    margin-left: -5px;
+    color: orange;
+}
+
+.profile a:hover {
+    background-color: royalblue;
+    color: aqua;
+
+}
+
+.first_photo img {
+    margin-bottom: -4px;
+    transition: .5s;
+}
+
+.first_photo img:hover {
+    transform: scale(1.1);
+}
+
+/* only device width 700px */
+@media only screen and (max-width:700px) {
+    .sidebar_overall {
+        margin-top: 20px;
+    }
+
+    .two {
+        margin-top: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .profile {
+        margin-left: 20px;
+        margin-top: 100px
+    }
+
+    .first_photo {
+        margin-top: -40%;
+        margin-left: 30%;
+
+    }
+
+    .first_photo img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: -15px;
+    }
 }
