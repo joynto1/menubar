@@ -27,6 +27,7 @@ label #cencel {
     top: 20px;
     cursor: pointer;
     transition: .5s;
+    color: blue;
 }
 
 label #cencel:hover {
@@ -55,8 +56,14 @@ header {
     padding: 10px;
     border-bottom: 1px solid aqua;
     border-radius: 10px;
-    color: aliceblue;
+    color: rgb(87, 58, 80);
     background-color: cadetblue;
+    transition: .5s;
+}
+
+header:hover {
+    background-color: aqua;
+    color: orange;
 }
 
 .sidebar_overall {
@@ -64,7 +71,7 @@ header {
     position: fixed;
     width: 200px;
     height: 100%;
-    background-color: rgb(70, 30, 30);
+    background-color: rgba(80, 79, 26, 0.623);
     font-size: 20px;
     margin-left: -250px;
     transition: .5s;
@@ -84,16 +91,18 @@ a {
 
 }
 
-li {
+li a {
     border-bottom: 1px solid aqua;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin-left: -10px;
-    margin-right: 20px;
-
+    margin-left: -20px
 }
 
 li:hover a {
-    padding: 30px;
+    padding: 10px 20px;
     font-size: 25px;
+    background-color: aqua;
+    color: orange;
+    border-radius: 20px;
 
 }
